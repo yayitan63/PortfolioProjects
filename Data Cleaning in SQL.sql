@@ -119,16 +119,16 @@ order by 2
 
 select SoldAsVacant,
 	case when SoldAsVacant = 'Y' then 'Yes'
-		 when SoldAsVacant = 'N' then 'No'
+	     when SoldAsVacant = 'N' then 'No'
 	else SoldAsVacant
 	end
 from NashvilleHousing
 
 update NashvilleHousing
 set SoldAsVacant = case when SoldAsVacant = 'Y' then 'Yes'
-					    when SoldAsVacant = 'N' then 'No'
-				   else SoldAsVacant
-				   end
+		        when SoldAsVacant = 'N' then 'No'
+		        else SoldAsVacant
+		    end
 
 select *
 from NashvilleHousing
